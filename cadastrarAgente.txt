@@ -1,0 +1,34 @@
+ATOR: Administrador
+
+FLUXO BASICO:
+
+1 - Na tela principal, o administrador seleciona a opcao de 'login'.
+2 - O sistema apresenta a 'Tela de login' onde o  usuario deve entrar com suas credeciais (info.1) (alt.1)
+3 - O Sistema apresenta a 'Tela de gerenciamento', onde o administrador seleciona a opcao 'cadastrar Agente'.
+4 - O sistema aprensenta os campos necessarios para cadastramento das informacoes do agente.(info.2)
+5 - O administrador preenche os campos necessarios e enviar a solicitacao para ser processadas. (alt.2)
+6 - O sistema confirma a realizacao do cadastramento.(msg.3)
+5 - O sistema retorna para a 'Tela de Gerenciamento'.
+
+
+
+FLUXO ALTERNATIVO:
+
+alt.1 - Login o senha Incorreto/inexistente
+	1 - O sistema encaminha a solicitacao para a pagina de login com a seguinte mensagem msg.1
+
+alt.2 - Erro ao cadasatrar e/ou servidor inacessivel
+	1 - O sistema devera encaminhar para FB.4 com a seguinte mensagem msg.2
+
+
+MENSAGENS:
+
+msg.1 - Usuario nao cadastrado ou email ou senha incorretos.
+msg.2 - servico indisponivel ou dados cadastrados de forma incorreta.
+msg.3 - Conta de Agente cadastrada com sucesso! 
+
+CAMPOS
+
+info.1 - 'email' / 'senha'	
+info.2 - 'Nome do Agente'. 'endereco', 'email', 'senha de Acesso'.
+
