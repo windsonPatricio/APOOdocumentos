@@ -1,0 +1,35 @@
+ATOR: Agente de Viagem
+
+FLUXO BASICO:
+
+1 - Na tela principal, o Usuario clica na opcao 'login'. 
+2 - O Sistema apresenta pagina para inserção dos dados de login. (alt.1)(info.1)
+3 - O Usuario preenche os dados solicitados e clica em login. (alt.2)
+4 - O Sistema verifica os dados cadastrado e confirma o cadastro.(alt.2)
+5 - O Sistema envia as informações e direciona para a pagina inicial de usuario logado. (alt.1)(info.2)
+6 - O Usuario seleciona a opção 'cadastrar Pacote'. (msg.3)(info.2)
+7 - O sistema apresenta tela com as opções de inserção para o pacote.
+8 - O usuario seleciona pode opção desejada.
+9 - O sitema apresenta formulario para cadastramento da opção escolhida.
+10 - O usuario efetua o cadastramento dos dados e selecionar 'enviar'.
+11 -  
+
+FLUXO ALTERNATIVO:
+
+alt.1 - Erro na Pagina: 
+	1 - O sistema encaminha o usuario para a pagina principal com a seguinte mensagem msg.1
+
+alt.2 - Dados preenchidos inválidos:
+	1 - O sistema identifica os campos e os destaca para o usuario. (msg.2)
+
+
+MENSAGENS:
+
+msg.1 - Erro no processamento, pagina solicitada não pôde ser acessada.
+msg.2 - Usuario ou senha invalido(s).
+msg.3 - Cadastro Realizado com Sucesso! 
+
+CAMPOS
+
+info.1 - 'Usuario' / 'senha'
+info.1 - 'CPF' / 'Nome Completo' / 'data de nascimento' / 'RG' / 'Endereço (CEP, Rua, Logradouro, Numero, Cidade e Estado' / 'e-mail' / 'senha' / 'Enviar'.	
