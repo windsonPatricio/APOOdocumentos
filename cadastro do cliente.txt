@@ -1,0 +1,32 @@
+ATOR: Cliente
+
+FLUXO BASICO:
+
+1 - Na tela principal, o Cliente clica na opcao 'Cadastre-se'. 
+2 - O Sistema apresenta a 'Formulario de Cadastro' com os campos necessarios. (alt.1)(info.1)
+3 - O cidadao preenche as informacoes nos campos montrado no formulario e seleciona 'enviar'.
+4 - O Sistema verifica os dados cadastrado e confirma o cadastro.(alt.2)
+5 - O Sistema envia as informações para armazenamento no Banco de Dados.
+6 - O sistema direciona para a pagina de 'login'. (msg.3)(info.2)
+
+
+
+FLUXO ALTERNATIVO:
+
+alt.1 - Erro na Pagina: 
+	1 - O sistema encaminha o usuario para a pagina principal com a seguinte mensagem msg.1
+
+alt.2 - Dados preenchidos inválidos:
+	1 - O sistema identifica os campos e os destaca para o usuario. (msg.2)
+
+
+MENSAGENS:
+
+msg.1 - Erro no processamento, pagina solicitada não pôde ser acessada.
+msg.2 - campo com preenchimento vazio/invalido.
+msg.3 - Cadastro Realizado com Sucesso! 
+
+CAMPOS
+
+info.1 - 'CPF' / 'Nome Completo' / 'data de nascimento' / 'RG' / 'Endereço (CEP, Rua, Logradouro, Numero, Cidade e Estado' / 'e-mail' / 'senha' / 'Enviar'.	
+info.2 - 'Usuario' / 'senha'
