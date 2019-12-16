@@ -1,0 +1,30 @@
+ATOR: Agente de Viagem
+
+FLUXO BASICO:
+
+1 - O Usuario seleciona a opção 'Incluir Pacote'.(alt.1.1)
+2 - O sistema apresenta tela com as opções de inserção para o pacote.(info.1)
+3 - O usuario preenche os dados solicitados e clica em 'Cadastrar'.(alt.2)
+4 - O sistema apresenta a lista dos pacotes recem cadastrados.(msg.3)
+
+FLUXO ALTERNATIVO:
+
+alt.1 - Erro na Pagina: 
+	1 - O sistema encaminha o usuario para a pagina principal com a seguinte mensagem (msg.1)
+	2 - O sistema encaminha o usuario para FB.1 com a seguinte mensagem (msg.1)
+
+alt.2 - Dados preenchidos inválidos:
+	1 - O sistema identifica os campos e os destaca para o usuario. (msg.2)
+
+
+MENSAGENS:
+
+msg.1 - Erro no processamento, pagina solicitada não pôde ser acessada.
+msg.2 - Dados invalido(s) ou campos obrigatorios nao preenchidos.
+msg.3 - Cadastro Realizado com Sucesso! 
+
+CAMPOS
+
+info.1 - 'Nome do pacote' / 'Quantidade de passageiros' / 'valor do pacote' /
+'data de inicio' / 'data de fim'
+	
